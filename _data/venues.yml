@@ -1,3 +1,6 @@
+ACL:
+  url: https://aclanthology.org/venues/acl/
+
 arXiv:
   url: https://arxiv.org
 
@@ -26,10 +29,10 @@ CACM:
   url: https://cacm.acm.org
 
 EMNLP:
-  url: https://emnlp2018.org/
+  url: https://aclanthology.org/venues/emnlp/
 
 NAACL:
-  url: https://naacl2019.org/
+  url: https://aclanthology.org/venues/naacl/
 
 KDD:
   url: https://www.kdd.org/

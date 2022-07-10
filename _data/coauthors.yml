@@ -1,3 +1,6 @@
+Andreas:
+  url: https://www.mit.edu/~jda/
+
 Betteridge:
   url: http://www.cs.cmu.edu/~jbetter/
 
@@ -22,11 +25,20 @@ Dalvi:
 Dubey:
   url: https://sites.google.com/site/kumaravinavadubey/
 
+Fang:
+  url: https://hao-fang.github.io/
+
+Fragkiadaki:
+  url: https://www.cs.cmu.edu/~katef/
+
 Gardner:
   url: http://www.cs.cmu.edu/~mg1/
 
 Greaves:
   url: http://www.malcolmgreaves.io/
+
+Guo:
+  url: https://people.csail.mit.edu/aguo/
 
 Gupta:
   url: http://www.cs.cmu.edu/~abhinavg/
@@ -40,8 +52,14 @@ Hruschka Jr:
 Kapoor:
   url: https://www.microsoft.com/en-us/research/people/akapoor/
 
+Klein:
+  url: https://www2.eecs.berkeley.edu/Faculty/Homepages/klein.html
+
 Krishnamurthy:
   url: http://allenai.org/team/jayantk/
+
+Lal:
+  url: https://shamitlal.github.io/
 
 Lao:
   url: http://www.cs.cmu.edu/~nlao/
@@ -58,6 +76,9 @@ Nakashole:
 Neubig:
   url: http://www.phontron.com/
 
+Pauls:
+  url: https://www.linkedin.com/in/adam-pauls-137054102
+
 Póczos:
   url: http://www.cs.cmu.edu/~bapoczos/
 
@@ -69,6 +90,9 @@ Pratim Talukdar:
 
 Ritter:
   url: http://aritter.github.io/
+
+Roy:
+  url: https://sroy9.github.io/
 
 Samadi:
   url: http://www.mehdisamadi.com/
@@ -91,6 +115,15 @@ Stretcu:
 Stretcu*:
   url: https://otiliastr.github.io/
 
+Su:
+  url: https://ysu1989.github.io/
+
+Thomson:
+  url: https://samthomson.com/
+
+Tung:
+  url: https://sfish0101.bitbucket.io/
+
 Wang:
   url: http://www.cs.cmu.edu/~rcwang/
 
@@ -100,5 +133,14 @@ Welling:
 Wijaya:
   url: http://www.cs.cmu.edu/~dwijaya/
 
+Wolfe:
+  url: https://www.linkedin.com/in/w01fe/
+
 Yang:
   url: http://www.cs.cmu.edu/~bishan/
+
+Yin:
+  url: https://pcyin.me/
+
+Zhang:
+  url: https://zhangyuc.github.io/
