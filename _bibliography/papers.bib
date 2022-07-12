@@ -1,7 +1,78 @@
 ---
 ---
 
-% TODO: Slides.
+@inproceedings{Zhou:2022:online_parsing,
+  title         = {{Online Semantic Parsing for Latency Reduction in Task-Oriented Dialogue}},
+  author        = {Jiawei Zhou and Jason Eisner and Michael Newman and Emmanouil Antonios Platanios and Sam Thomson},
+  booktitle     = {Annual Meeting of the Association for Computational Linguistics (ACL)},
+  abbr          = {ACL},
+  url           = {https://aclanthology.org/2022.acl-long.110/},
+  year          = {2022},
+  abstract      = {Standard conversational semantic parsing maps a complete user utterance into an executable program, after which the program is executed to respond to the user. This could be slow when the program contains expensive function calls. We investigate the opportunity to reduce latency by predicting and executing function calls while the user is still speaking. We introduce the task of online semantic parsing for this purpose, with a formal latency reduction metric inspired by simultaneous machine translation. We propose a general framework with first a learned prefix-to-program prediction module, and then a simple yet effective thresholding heuristic for subprogram selection for early execution. Experiments on the SMCalFlow and TreeDST datasets show our approach achieves large latency reduction with good parsing quality, with a 30%–65% latency reduction depending on function execution time and allowed cost.},
+  pdf           = {zhou_2022_online_parsing/paper.pdf},
+  code          = {https://github.com/microsoft/online-semantic-parsing-for-latency-reduction},
+  note          = {{Outstanding Paper Award}},
+}
+
+@inproceedings{Chen:2022:text_to_sql,
+  title         = {{Bridging the Generalization Gap in Text-to-SQL Parsing with Schema Expansion}},
+  author        = {Chen Zhao and Yu Su and Adam Pauls and Emmanouil Antonios Platanios},
+  booktitle     = {Annual Meeting of the Association for Computational Linguistics (ACL)},
+  abbr          = {ACL},
+  url           = {https://aclanthology.org/2022.acl-long.381/},
+  year          = {2022},
+  abstract      = {Text-to-SQL parsers map natural language questions to programs that are executable over tables to generate answers, and are typically evaluated on large-scale datasets like Spider (Yu et al., 2018). We argue that existing benchmarks fail to capture a certain out-of-domain generalization problem that is of significant practical importance: matching domain specific phrases to composite operation over columns. To study this problem, we first propose a synthetic dataset along with a re-purposed train/test split of the Squall dataset (Shi et al., 2020) as new benchmarks to quantify domain generalization over column operations, and find existing state-of-the-art parsers struggle in these benchmarks. We propose to address this problem by incorporating prior domain knowledge by preprocessing table schemas, and design a method that consists of two components: schema expansion and schema pruning. This method can be easily applied to multiple existing base parsers, and we show that it significantly outperforms baseline parsers on this domain generalization problem, boosting the underlying parsers’ overall performance by up to 13.8% relative accuracy gain (5.1% absolute) on the new Squall data split.},
+  pdf           = {chen_2022_text_to_sql/paper.pdf},
+  code          = {https://github.com/microsoft/text-to-sql-schema-expansion-generalization},
+}
+
+@inproceedings{Belyy:2022:k_best,
+  title         = {{Guided K-best Selection for Semantic Parsing Annotation}},
+  author        = {Anton Belyy* and Chieh-Yang Huang* and Jacob Andreas and Emmanouil Antonios Platanios and Sam Thomson and Richard Shin and Subhro Roy and Aleksandr Nisnevich and Charles Chen and Benjamin Van Durme},
+  booktitle     = {Annual Meeting of the Association for Computational Linguistics (ACL)},
+  abbr          = {ACL},
+  url           = {https://aclanthology.org/2022.acl-long.381/},
+  year          = {2022},
+  abstract      = {Collecting data for conversational semantic parsing is a time-consuming and demanding process. In this paper we consider, given an incomplete dataset with only a small amount of data, how to build an AI-powered human-in-the-loop process to enable efficient data collection. A guided K-best selection process is proposed, which (i) generates a set of possible valid candidates; (ii) allows users to quickly traverse the set and filter incorrect parses; and (iii) asks users to select the correct parse, with minimal modification when necessary. We investigate how to best support users in efficiently traversing the candidate set and locating the correct parse, in terms of speed and accuracy. In our user study, consisting of five annotators labeling 300 instances each, we find that combining keyword searching, where keywords can be used to query relevant candidates, and keyword suggestion, where representative keywords are automatically generated, enables fast and accurate annotation.},
+  pdf           = {belyy_2022_k_best/paper.pdf},
+}
+
+@eprint{StengelEskin:2022:troubling_quirk,
+  title         = {{When More Data Hurts: A Troubling Quirk in Developing Broad-Coverage Natural Language Understanding Systems}},
+  author        = {Elias Stengel-Eskin and Emmanouil Antonios Platanios and Adam Pauls and Sam Thomson and Hao Fang and Benjamin Van Durme and Jason Eisner and Yu Su},
+  archivePrefix = "arXiv",
+  eprint        = {2205.12228},
+  primaryClass  = "cs.CL",
+  booktitle     = {arXiv},
+  abbr          = {arXiv},
+  year          = {2022},
+  abstract      = {In natural language understanding (NLU) production systems, users' evolving needs necessitate the addition of new features over time, indexed by new symbols added to the meaning representation space. This requires additional training data and results in ever-growing datasets. We present the first systematic investigation into this incremental symbol learning scenario. Our analyses reveal a troubling quirk in building (broad-coverage) NLU systems: as the training dataset grows, more data is needed to learn new symbols, forming a vicious cycle. We show that this trend holds for multiple mainstream models on two common NLU tasks: intent recognition and semantic parsing. Rejecting class imbalance as the sole culprit, we reveal that the trend is closely associated with an effect we call source signal dilution, where strong lexical cues for the new symbol become diluted as the training dataset grows. Selectively dropping training examples to prevent dilution often reverses the trend, showing the over-reliance of mainstream neural NLU models on simple lexical cues and their lack of contextual understanding.},
+  pdf           = {stengel_eskin_2022_troubling_quirk/paper.pdf},
+  code          = {https://github.com/microsoft/nlu-incremental-symbol-learning},
+}
+
+@inproceedings{Stoica:2021:retacred,
+  title         = {{Re-TACRED: Addressing Shortcomings of the TACRED Dataset}},
+  author        = {George Stoica and Emmanouil Antonios Platanios and Barnab{\'a}s P{\'o}czos},
+  booktitle     = {AAAI Conference on Artificial Intelligence},
+  abbr          = {AAAI},
+  url           = {https://aclanthology.org/2021.emnlp-main.608/},
+  year          = {2021},
+  abstract      = {TACRED is one of the largest and most widely used sentence-level relation extraction datasets. Proposed models that are evaluated using this dataset consistently set new state-of-the-art performance. However, they still exhibit large error rates despite leveraging external knowledge and unsupervised pretraining on large text corpora. A recent study suggested that this may be due to poor dataset quality. The study observed that over 50% of the most challenging sentences from the development and test sets are incorrectly labeled and account for an average drop of 8% f1-score in model performance. However, this study was limited to a small biased sample of 5k (out of a total of 106k) sentences, substantially restricting the generalizability and broader implications of its findings. In this paper, we address these shortcomings by: (i) performing a comprehensive study over the whole TACRED dataset, (ii) proposing an improved crowdsourcing strategy and deploying it to re-annotate the whole dataset, and (iii) performing a thorough analysis to understand how correcting the TACRED annotations affects previously published results. After verification, we observed that 23.9% of TACRED labels are incorrect. Moreover, evaluating several models on our revised dataset yields an average f1-score improvement of 14.3% and helps uncover significant relationships between the different models (rather than simply offsetting or scaling their scores by a constant factor). Finally, aside from our analysis we also release Re-TACRED, a new completely re-annotated version of the TACRED dataset that can be used to perform reliable evaluation of relation extraction models.},
+  pdf           = {stoica_2021_retacred/paper.pdf},
+}
+
+@inproceedings{Shin:2021:clamp,
+  title         = {{Constrained Language Models Yield Few-Shot Semantic Parsers}},
+  author        = {Richard Shin and Christopher Lin and Sam Thomson and Charles Chen and Subhro Roy and Emmanouil Antonios Platanios and Adam Pauls and Dan Klein and Jason Eisner and Benjamin Van Durme},
+  booktitle     = {Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  abbr          = {EMNLP},
+  url           = {https://aclanthology.org/2021.emnlp-main.608/},
+  year          = {2021},
+  abstract      = {We explore the use of large pretrained language models as few-shot semantic parsers. The goal in semantic parsing is to generate a structured meaning representation given a natural language input. However, language models are trained to generate natural language. To bridge the gap, we use language models to paraphrase inputs into a controlled sublanguage resembling English that can be automatically mapped to a target meaning representation. Our results demonstrate that with only a small amount of data and very little code to convert into English-like representations, our blueprint for rapidly bootstrapping semantic parsers leads to surprisingly effective performance on multiple community tasks, greatly exceeding baseline methods also trained on the same limited data.},
+  pdf           = {shin_2021_clamp/paper.pdf},
+}
+
 @inproceedings{Platanios:2021:platypus,
   title         = {{Value-Agnostic Conversational Semantic Parsing}},
   author        = {Emmanouil Antonios Platanios and Adam Pauls and Subhro Roy and Yuchen Zhang and Alex Kyte and Alan Guo and Sam Thomson and Jayant Krishnamurthy and Jason Wolfe and Jacob Andreas and Dan Klein},
@@ -11,6 +82,7 @@
   year          = {2021},
   abstract      = {Conversational semantic parsers map user utterances to executable programs given dialogue histories composed of previous utterances, programs, and system responses. Existing parsers typically condition on rich representations of history that include the complete set of values and computations previously discussed. We propose a model that abstracts over values to focus prediction on type- and function-level context. This approach provides a compact encoding of dialogue histories and predicted programs, improving generalization and computational efficiency. Our model incorporates several other components, including an atomic span copy operation and structural enforcement of well-formedness constraints on predicted programs, that are particularly advantageous in the low-data regime. Trained on the SMCalFlow and TreeDST datasets, our model outperforms prior work by 7.3% and 10.6% respectively in terms of absolute accuracy. Trained on only a thousand examples from each dataset, it outperforms strong baselines by 12.4% and 6.4%. These results indicate that simple representations are key to effective generalization in conversational semantic parsing.},
   pdf           = {platanios_2021_platypus/paper.pdf},
+  slides        = {../pptx/platanios_2021_platypus/slides.pptx},
 }
 
 @inproceedings{Xian:2021:hyper_dynamics,
@@ -34,6 +106,17 @@
   abstract      = {We describe a span-level supervised attention loss that improves compositional generalization in semantic parsers. Our approach builds on existing losses that encourage attention maps in neural sequence-to-sequence models to imitate the output of classical word alignment algorithms. Where past work has used word-level alignments, we focus on spans; borrowing ideas from phrase-based machine translation, we align subtrees in semantic parses to spans of input sentences, and encourage neural attention mechanisms to mimic these alignments. This method improves the performance of transformers, RNNs, and structured decoders on three benchmarks of compositional generalization.},
   pdf           = {yin_2021_compositional_generalization/paper.pdf},
   code          = {https://github.com/microsoft/compositional-generalization-span-level-attention}
+}
+
+@thesis{Platanios:2020:thesis,
+  author        = {Platanios, Emmanouil Antonios},
+  title         = {{Learning Collections of Functions}},
+  booktitle     = {PhD Thesis at Carnegie Mellon University},
+  abbr          = {CMU},
+  year          = {2020},
+  pdf           = {thesis/thesis.pdf},
+  slides        = {thesis/defense.pdf},
+  abstract      = {Human intelligence is magnificent. One of its most impressive aspects is how humans always seem able to learn new skills quickly and without much supervision by utilizing previously learned skills and forming connections between them. More specifically, human learning is often not about learning a single skill in isolation, but rather about learning collections of skills and utilizing relationships between them to learn more efficiently. Furthermore, these relationships may either be explicitly provided or implicitly learned, indicating high levels of abstraction in the learned abilities. On the other hand, even though machine learning has witnessed growing success across a multitude of applications over the past years, current systems are each highly specialized to solve one or just a handful of problems. In this thesis, we argue that a computer system that learns to perform multiple tasks jointly and that is aware of the relationships between these tasks, will be able to learn more efficiently and effectively than a system that learns to perform each task in isolation. Moreover, the relationships between the tasks may either be explicitly provided through supervision or implicitly learned by the system itself, and will allow the system to self-reflect and evaluate itself without any task-specific supervision. This includes learning relationships in the form of higher-order functions—namely functions that compose, transform, or otherwise manipulate other functions—that can enable truly multi-task and zero-shot learning. In the first part, we present a method that allows learning systems to evaluate themselves in an unsupervised manner by leveraging explicitly provided relationships between multiple learned functions. We refer to this ability as self-reflection and show how it addresses an important limitation of existing never-ending learning systems like the never-ending language learner (Mitchell et al., 2018). We then propose multiple extensions that improve upon this method, resulting in several robust algorithms for estimating the accuracy of classifiers from unlabeled data. In the second part, we consider more general multi-task learning settings and propose an abstract framework called contextual parameter generation (CPG), which allows systems to generate functions for solving different kinds of tasks without necessarily having been shown any training data for these tasks. This framework generalizes existing approaches in multi-task learning, transfer learning, and meta-learning, and it further allows for learning arbitrary higher-order functions. It does so by formalizing the notion of a function representation and what it means for functions to operate on other functions or even on themselves. This new type of learning, which we refer to as higher-order learning, enables learning relationships between multiple functions in the form of higher-order functions, and is inspired by functional programming and category theory. Finally, we propose the jelly bean world (JBW), a novel evaluation framework for never-ending learning systems.}
 }
 
 @inproceedings{Platanios:2020:jbw,
@@ -104,7 +187,7 @@
 }
 
 @article{Mitchell:2018:cacm,
-  author        = {Mitchell, Tom M and Cohen, William W and Hruschka Jr, Estevam R and Pratim Talukdar, Partha and Yang, Bishan and Betteridge, Justin and Carlson, Andrew and Dalvi, Bhanava and Gardner, Matt and Kisiel, Bryan and Krishnamurthy, Jayant and Lao, Ni and Mazaitis, Kathryn and Mohamed, Thahir P and Nakashole, Ndapakula and Platanios, Emmanouil Antonios and Ritter, Alan and Samadi, Mehdi and Settles, Burr and Wang, Richard C and Wijaya, Derry and Gupta, Abhinav and Chen, Xinlei and Saparov, Abulhair and Greaves, Malcolm and Welling, Joel},
+  author        = {Mitchell, Tom and Cohen, William W and Hruschka Jr, Estevam R and Pratim Talukdar, Partha and Yang, Bishan and Betteridge, Justin and Carlson, Andrew and Dalvi, Bhanava and Gardner, Matt and Kisiel, Bryan and Krishnamurthy, Jayant and Lao, Ni and Mazaitis, Kathryn and Mohamed, Thahir P and Nakashole, Ndapakula and Platanios, Emmanouil Antonios and Ritter, Alan and Samadi, Mehdi and Settles, Burr and Wang, Richard C and Wijaya, Derry and Gupta, Abhinav and Chen, Xinlei and Saparov, Abulhair and Greaves, Malcolm and Welling, Joel},
   title         = {{Never-Ending Learning}},
   journal       = {Communications of the ACM},
   abbr          = {CACM},
@@ -165,7 +248,7 @@
 }
 
 @inproceedings{Platanios:2017:accuracy_estimation_logic,
-  author        = {Platanios, Emmanouil Antonios and Poon, Hoifung and Horvitz, Eric and Mitchell, Tom M},
+  author        = {Platanios, Emmanouil Antonios and Poon, Hoifung and Horvitz, Eric and Mitchell, Tom},
   title         = {{Estimating Accuracy from Unlabeled Data: A Probabilistic Logic Approach}},
   booktitle     = {Neural Information Processing Systems},
   abbr          = {NeurIPS},
@@ -178,7 +261,7 @@
 }
 
 @inproceedings{Platanios:2016ti,
-  author        = {Platanios, Emmanouil Antonios and Dubey, Avinava and Mitchell, Tom M},
+  author        = {Platanios, Emmanouil Antonios and Dubey, Avinava and Mitchell, Tom},
   title         = {{Estimating Accuracy from Unlabeled Data: A Bayesian Approach}},
   booktitle     = {International Conference in Machine Learning},
   abbr          = {ICML},
@@ -192,7 +275,7 @@
 }
 
 @inproceedings{Mitchell:2015wo,
-  author        = {Mitchell, Tom M and Cohen, William W and Hruschka Jr, Estevam R and Pratim Talukdar, Partha and Betteridge, Justin and Carlson, Andrew and Dalvi, Bhanava and Gardner, Matt and Kisiel, Bryan and Krishnamurthy, Jayant and Lao, Ni and Mazaitis, Kathryn and Mohamed, Thahir P and Nakashole, Ndapakula and Platanios, Emmanouil Antonios and Ritter, Alan and Samadi, Mehdi and Settles, Burr and Wang, Richard C and Wijaya, Derry and Gupta, Abhinav and Chen, Xinlei and Saparov, Abulhair and Greaves, Malcolm and Welling, Joel},
+  author        = {Mitchell, Tom and Cohen, William W and Hruschka Jr, Estevam R and Pratim Talukdar, Partha and Betteridge, Justin and Carlson, Andrew and Dalvi, Bhanava and Gardner, Matt and Kisiel, Bryan and Krishnamurthy, Jayant and Lao, Ni and Mazaitis, Kathryn and Mohamed, Thahir P and Nakashole, Ndapakula and Platanios, Emmanouil Antonios and Ritter, Alan and Samadi, Mehdi and Settles, Burr and Wang, Richard C and Wijaya, Derry and Gupta, Abhinav and Chen, Xinlei and Saparov, Abulhair and Greaves, Malcolm and Welling, Joel},
   title         = {{Never-Ending Learning}},
   booktitle     = {Association for the Advancement of Artificial Intelligence},
   abbr          = {AAAI},
@@ -203,7 +286,7 @@
 }
 
 @thesis{Platanios:2015ui,
-  author        = {Platanios, Emmanouil A},
+  author        = {Platanios, Emmanouil Antonios},
   title         = {{Estimating Accuracy from Unlabeled Data}},
   booktitle     = {Master's Thesis at Carnegie Mellon University},
   abbr          = {CMU},
@@ -215,7 +298,7 @@
 }
 
 @inproceedings{Platanios:2014ti,
-  author        = {Platanios, Emmanouil Antonios and Blum, Avrim and Mitchell, Tom M},
+  author        = {Platanios, Emmanouil Antonios and Blum, Avrim and Mitchell, Tom},
   title         = {{Estimating Accuracy from Unlabeled Data}},
   booktitle     = {Conference on Uncertainty in Artificial Intelligence},
   abbr          = {UAI},
@@ -228,7 +311,7 @@
 }
 
 @article{Platanios:2014gp,
-  author        = {Platanios, Emmanouil Antonios and Chatzis, Sotirios P},
+  author        = {Platanios, Emmanouil Antonios and Chatzis, Sotirios},
   title         = {{Gaussian Process-Mixture Conditional Heteroscedasticity}},
   journal       = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
   abbr          = {PAMI}, 
@@ -242,7 +325,7 @@
 }
 
 @inproceedings{Platanios:2012uh,
-  author        = {Platanios, Emmanouil Antonios and Chatzis, Sotirios P},
+  author        = {Platanios, Emmanouil Antonios and Chatzis, Sotirios},
   title         = {{Nonparametric Mixtures of Multi-Output Heteroscedastic Gaussian Processes for Volatility Modeling}},
   booktitle     = {Neural Information Processing Systems Workshop on Modern Nonparametric Methods in Machine Learning},
   abbr          = {NeurIPS}, 
