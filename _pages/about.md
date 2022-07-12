@@ -14,16 +14,16 @@ nav: about
   <div class="row mt-3 mb-3">
     <div class="col-sm-6">
       <h6 class="mt-1 text-left text-sm-right" style="font-stretch: ultra-condensed;">
-        <a style="color: rgb(60, 72, 88);" href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a><br/>
-        <a style="color: rgb(60, 72, 88);" href="http://www.cs.cmu.edu/" target="_blank">School of Computer Science</a><br/>
-        <a style="color: rgb(60, 72, 88);" href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>
+        <a style="color: rgb(60, 72, 88);" href="http://www.ml.cmu.edu/" target="_blank">Principal Researcher</a><br/>
+        <a style="color: rgb(60, 72, 88);" href="http://www.cs.cmu.edu/" target="_blank">Semantic Machines</a><br/>
+        <a style="color: rgb(60, 72, 88);" href="http://www.cmu.edu/" target="_blank">Microsoft</a>
       </h6>
     </div>
     <div class="col-sm-6">
       <h6 class="mt-1 text-left text-sm-left" style="font-stretch: ultra-condensed;">
-        8221 Gates Hillman Center<br/>
-        5000 Forbes Ave<br/>
-        Pittsburgh, PA 15213
+        Berkeley Way West, Floor 7<br/>
+        1919 Shattuck Ave<br/>
+        Berkeley, CA, 94704
       </h6>
     </div>
   </div>
