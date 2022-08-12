@@ -1,3 +1,5 @@
+# TODO: The CV PDF is out-of-date.
+
 - title: General Information
   type: map
   contents:
@@ -24,12 +26,12 @@
         - Awarded the <b>CMU Presidential Fellowship</b>.
         - '<u>GPA:</u> <b>4.18</b> (4.0 scale).'
         - '<u>Advisor:</u> <a href="http://www.cs.cmu.edu/~tom/" target="_blank"><b>Prof. Tom M. Mitchell</b></a>.'
-        - 'I work on the <a href="http://rtw.ml.cmu.edu/" target="_blank"><b>Never Ending Language Learning (NELL)</b></a> project.'
-        - 'My thesis work is on <b>Learning Collections of Functions</b>.'
-        - title: 'I do research on topics related to <b>self-reflection in machine learning</b>:'
+        - 'I worked on the <a href="http://rtw.ml.cmu.edu/" target="_blank"><b>Never Ending Language Learning (NELL)</b></a> project.'
+        - 'My thesis work was on <b>Learning Collections of Functions</b>.'
+        - title: 'I performed research on topics related to <b>self-reflection in machine learning</b>:'
           contents:
-            - I have developed multiple methods for using unlabeled data to estimate the accuracies of several different classifiers performing the same task, that I have presented at Uncertainty in Artificial Intelligence (<b>UAI</b>) in 2014, International Conference in Machine Learning (<b>ICML</b>) in 2016, and at Neural Information Processing Systems (<b>NIPS</b>) in 2017.
-            - I have developed a method for performing <b>low-resource and zero-shot multilingual machine translation</b>.
+            - I developed multiple methods for using unlabeled data to estimate the accuracies of several different classifiers performing the same task, that I have presented at Uncertainty in Artificial Intelligence (<b>UAI</b>) in 2014, International Conference in Machine Learning (<b>ICML</b>) in 2016, and at Neural Information Processing Systems (<b>NIPS</b>) in 2017.
+            - I developed a method for performing <b>low-resource and zero-shot multilingual machine translation</b>.
             - I am developing a self-reflection mechanism for machine learning systems and I am applying it in NELL.
             - I am working on a new framework for learning where agreement among multiple agents is the objective.
     - title: Carnegie Mellon University – M.S. in Machine Learning.
@@ -60,11 +62,13 @@
     - title: 'Principal Researcher at Microsoft Semantic Machines.'
       year: 2022-now
       description:
+        - '<u>Manager:</u> <a href="https://people.eecs.berkeley.edu/~klein/" target="_blank"><b>Dan Klein</b></a>, Technical Fellow.'
         - Leading a team working on a project related to user behavior modeling that cannot yet be shared publicly.
     - title: 'Senior Researcher at Microsoft Semantic Machines.'
       year: 2020-2022
       description:
-        - Designed, developed, and shipped a contextual semantic parser that powers the Semantic Machines conversational AI platform.
+        - '<u>Manager:</u> <a href="https://people.eecs.berkeley.edu/~klein/" target="_blank"><b>Dan Klein</b></a>, Technical Fellow.'
+        - Designed and shipped a contextual semantic parser that powers the Semantic Machines conversational AI platform.
         - Worked on multiple research projects leading to academic publications at the intersection of natural language processing and machine learning.
     - title: 'Research Analyst Consultant at Cubist Systematic Strategies.'
       year: 2016-17
@@ -118,7 +122,10 @@
   contents:
     - title: '<a href="https://github.com/eaplatanios/tensorflow_scala" target="_blank"><b>TensorFlow Scala.</b></a>'
       year: 2017-now
-      description: Machine learning library and API for the <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> framework developed by Google, that is currently being used by multiple researchers and companies (~600 GitHub stars).
+      description: Machine learning library and API for the <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> framework developed by Google, that is currently being used by multiple researchers and companies (~900 GitHub stars).
+    - title: '<a href="https://github.com/tensorflow/swift-apis" target="_blank"><b>Swift for TensorFlow.</b></a>'
+      year: 2019-20
+      description: I was a contributor tp this project, which is a machine learning library and API for the <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> framework developed by Google, and that enables differentiable programming.
     - title: '<a href="https://github.com/eaplatanios/symphony-mt" target="_blank"><b>Symphony MT.</b></a>'
       year: 2018
       description: Machine translation library written in Scala, that supports various models along the whole translation pipeline (i.e., ranging from data preprocessing and vocabulary generation, to multiple encoder and decoder models).

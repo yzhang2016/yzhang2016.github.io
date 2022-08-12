@@ -1,6 +1,17 @@
 ---
 ---
 
+@inproceedings{StengelEskin:2022:troubling_quirk,
+  title         = {{When More Data Hurts: A Troubling Quirk in Developing Broad-Coverage Natural Language Understanding Systems}},
+  author        = {Elias Stengel-Eskin and Emmanouil Antonios Platanios and Adam Pauls and Sam Thomson and Hao Fang and Benjamin Van Durme and Jason Eisner and Yu Su},
+  booktitle     = {Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  abbr          = {EMNLP},
+  year          = {2022},
+  abstract      = {In natural language understanding (NLU) production systems, users' evolving needs necessitate the addition of new features over time, indexed by new symbols added to the meaning representation space. This requires additional training data and results in ever-growing datasets. We present the first systematic investigation into this incremental symbol learning scenario. Our analyses reveal a troubling quirk in building (broad-coverage) NLU systems: as the training dataset grows, more data is needed to learn new symbols, forming a vicious cycle. We show that this trend holds for multiple mainstream models on two common NLU tasks: intent recognition and semantic parsing. Rejecting class imbalance as the sole culprit, we reveal that the trend is closely associated with an effect we call source signal dilution, where strong lexical cues for the new symbol become diluted as the training dataset grows. Selectively dropping training examples to prevent dilution often reverses the trend, showing the over-reliance of mainstream neural NLU models on simple lexical cues and their lack of contextual understanding.},
+  pdf           = {stengel_eskin_2022_troubling_quirk/paper.pdf},
+  code          = {https://github.com/microsoft/nlu-incremental-symbol-learning},
+}
+
 @inproceedings{Zhou:2022:online_parsing,
   title         = {{Online Semantic Parsing for Latency Reduction in Task-Oriented Dialogue}},
   author        = {Jiawei Zhou and Jason Eisner and Michael Newman and Emmanouil Antonios Platanios and Sam Thomson},
@@ -35,20 +46,6 @@
   year          = {2022},
   abstract      = {Collecting data for conversational semantic parsing is a time-consuming and demanding process. In this paper we consider, given an incomplete dataset with only a small amount of data, how to build an AI-powered human-in-the-loop process to enable efficient data collection. A guided K-best selection process is proposed, which (i) generates a set of possible valid candidates; (ii) allows users to quickly traverse the set and filter incorrect parses; and (iii) asks users to select the correct parse, with minimal modification when necessary. We investigate how to best support users in efficiently traversing the candidate set and locating the correct parse, in terms of speed and accuracy. In our user study, consisting of five annotators labeling 300 instances each, we find that combining keyword searching, where keywords can be used to query relevant candidates, and keyword suggestion, where representative keywords are automatically generated, enables fast and accurate annotation.},
   pdf           = {belyy_2022_k_best/paper.pdf},
-}
-
-@eprint{StengelEskin:2022:troubling_quirk,
-  title         = {{When More Data Hurts: A Troubling Quirk in Developing Broad-Coverage Natural Language Understanding Systems}},
-  author        = {Elias Stengel-Eskin and Emmanouil Antonios Platanios and Adam Pauls and Sam Thomson and Hao Fang and Benjamin Van Durme and Jason Eisner and Yu Su},
-  archivePrefix = "arXiv",
-  eprint        = {2205.12228},
-  primaryClass  = "cs.CL",
-  booktitle     = {arXiv},
-  abbr          = {arXiv},
-  year          = {2022},
-  abstract      = {In natural language understanding (NLU) production systems, users' evolving needs necessitate the addition of new features over time, indexed by new symbols added to the meaning representation space. This requires additional training data and results in ever-growing datasets. We present the first systematic investigation into this incremental symbol learning scenario. Our analyses reveal a troubling quirk in building (broad-coverage) NLU systems: as the training dataset grows, more data is needed to learn new symbols, forming a vicious cycle. We show that this trend holds for multiple mainstream models on two common NLU tasks: intent recognition and semantic parsing. Rejecting class imbalance as the sole culprit, we reveal that the trend is closely associated with an effect we call source signal dilution, where strong lexical cues for the new symbol become diluted as the training dataset grows. Selectively dropping training examples to prevent dilution often reverses the trend, showing the over-reliance of mainstream neural NLU models on simple lexical cues and their lack of contextual understanding.},
-  pdf           = {stengel_eskin_2022_troubling_quirk/paper.pdf},
-  code          = {https://github.com/microsoft/nlu-incremental-symbol-learning},
 }
 
 @inproceedings{Stoica:2021:retacred,
@@ -111,7 +108,7 @@
 @thesis{Platanios:2020:thesis,
   author        = {Platanios, Emmanouil Antonios},
   title         = {{Learning Collections of Functions}},
-  booktitle     = {PhD Thesis at Carnegie Mellon University},
+  booktitle     = {Doctoral Thesis at Carnegie Mellon University},
   abbr          = {CMU},
   year          = {2020},
   pdf           = {thesis/thesis.pdf},

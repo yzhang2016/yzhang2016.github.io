@@ -33,7 +33,7 @@ nav: about
 
 <div class="col text-justify p-0">
   I am a Principal Researcher at <a href="https://www.microsoft.com/en-us/research/project/semantic-machines/" target="_blank">Microsoft Semantic Machines</a>, working at the intersection of Machine Learning and
-  Natural Language Processing. I am currently leading a team working on a project related to user behavior modeling that cannot yet be shared publicly. Previously, I designed, developed, and shipped a contextual
+  Natural Language Processing. I am currently leading a team working on a project related to user behavior modeling that cannot yet be shared publicly. Previously, I designed and shipped a contextual
   semantic parser that powers the Semantic Machines conversational AI platform. I also worked on other related research projects leading to multiple academic publications.
   <br/><br/>
   Prior to this, I was a PhD student in the <a href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a> of the <a href="https://www.scs.cmu.edu/" target="_blank">School of Computer Science</a> at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. My advisor was <a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a> and I worked on <a href="http://rtw.ml.cmu.edu/rtw/" target="_blank">Never-Ending Learning</a>. My PhD thesis on learning collections of functions can be found <a href="{{ '/assets/pdf/thesis/thesis.pdf' | prepend: site.baseurl }}" target="_blank">here</a>. Throughout my PhD I also worked on <a href="{{ '/projects/' }}">multiple other projects</a> related to artificial intelligence and machine learning.
