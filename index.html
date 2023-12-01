@@ -31,6 +31,23 @@
       text-align: center; /* Center-align the captions */
     }
   </style>
+
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    justify-content: center;
+    grid-gap: 10px;
+  }
+  
+  .item {
+    height: 50px;
+    text-align: center;
+    border: none;
+  }
+  </style>
+
+
   
 </head>
 <body>
@@ -290,38 +307,16 @@
     
 <br /> <br />  
 <h3 class="title mb-4 p-0">Interns</h3> 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 25%; padding: 10px; border: 1px solid #ccc; text-align: center;">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <span>作者1</span>
-        <br>
-        <span>学校1</span>
-      </div>
-    </td>
-    <td style="width: 25%; padding: 10px; border: 1px solid #ccc; text-align: center;">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <span>作者2</span>
-        <br>
-        <span>学校2</span>
-      </div>
-    </td>
-    <td style="width: 25%; padding: 10px; border: 1px solid #ccc; text-align: center;">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <span>作者3</span>
-        <br>
-        <span>学校3</span>
-      </div>
-    </td>
-    <td style="width: 25%; padding: 10px; border: 1px solid #ccc; text-align: center;">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <span>作者4</span>
-        <br>
-        <span>学校4</span>
-      </div>
-    </td>
-  </tr>
-</table>
+<div class="container">
+  <div class="item">合作者1<br>学校1</div>
+  <div class="item">合作者2<br>学校2</div>
+  <div class="item">合作者3<br>学校3</div>
+  <div class="item">合作者4<br>学校4</div>
+  <div class="item">合作者5<br>学校5</div>
+  <div class="item">合作者6<br>学校6</div>
+  <div class="item">合作者7<br>学校7</div>
+  <div class="item">合作者8<br>学校8</div>
+</div>
 
 
 
